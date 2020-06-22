@@ -1,26 +1,17 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
-const LandingPage = props => {
+const LandingPage = () => {
   const [enteredText, setEnteredText] = useState('');
-
-  const searchGame = event => {
-    event.preventDefault();
-    // const newGoal = {
-    //   id: Math.random().toString(),
-    //   text: enteredText,
-    // };
-    // props.onGoalAdd(newGoal);
-    setEnteredText('');
-  };
 
   const textChangeHandler = event => {
     setEnteredText(event.target.value);
   };
 
   return (
-    <form className='form-inline main-wrap' onSubmit={searchGame}>
+    <form className='form-inline main-wrap'>
       <input
         type='text'
         className='form-control'
@@ -28,13 +19,15 @@ const LandingPage = props => {
         required
         onChange={textChangeHandler}
       />
-      <button
-        className='btn btn-success'
-        style={{ margin: '1rem' }}
-        type='submit'
-      >
-        Search
-      </button>
+      <Link to={`/search/${enteredText}`}>
+        <button
+          className='btn btn-success'
+          style={{ margin: '1rem' }}
+          type='submit'
+        >
+          Search
+        </button>
+      </Link>
     </form>
   );
 };

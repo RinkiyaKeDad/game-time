@@ -1,6 +1,6 @@
-.main-wrap {
+.main-wrap-search {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40vh 1rem 1rem 1rem;
+  flex-wrap: wrap;
 }
