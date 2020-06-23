@@ -23,19 +23,29 @@ const GamePage = props => {
   }, [gameSlug]);
 
   return (
-    <div>
+    <div className='main-bg'>
       {loadedGame && (
         <div className='game-content'>
           <img
             src={loadedGame.background_image}
             className='rounded'
-            alt='Cinque Terre'
-            style={{ width: '40rem', height: '30rem' }}
+            alt={loadedGame.name}
           />
-          <div> Metacritic Score: {loadedGame.metacritic} </div>
-          <div>
+          <div className='meta-score'>
             {' '}
-            Description: <p>{loadedGame.description_raw}</p>{' '}
+            Metacritic Score:{' '}
+            {loadedGame.metacritic
+              ? loadedGame.metacritic
+              : 'Score does not exist'}{' '}
+          </div>
+          <div className='desc'>
+            {' '}
+            <h2>Description:</h2>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: loadedGame.description,
+              }}
+            ></div>{' '}
           </div>
         </div>
       )}

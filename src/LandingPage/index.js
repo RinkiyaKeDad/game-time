@@ -11,24 +11,29 @@ const LandingPage = () => {
   };
 
   return (
-    <form className='form-inline main-wrap'>
-      <input
-        type='text'
-        className='form-control'
-        value={enteredText}
-        required
-        onChange={textChangeHandler}
-      />
-      <Link to={`/search/${enteredText}`}>
-        <button
-          className='btn btn-success'
-          style={{ margin: '1rem' }}
-          type='submit'
-        >
-          Search
-        </button>
-      </Link>
-    </form>
+    <div className='background-stuff'>
+      <mark>
+        <h1>GameTime</h1>
+      </mark>
+      <form className='form-inline form-stuff'>
+        <input
+          type='text'
+          className='form-control'
+          value={enteredText}
+          required
+          onChange={textChangeHandler}
+        />
+        <Link to={`/search/${enteredText}`}>
+          <button
+            className='btn btn-success'
+            style={{ margin: '1rem' }}
+            type='submit'
+          >
+            Search
+          </button>
+        </Link>
+      </form>
+    </div>
   );
 };
 

@@ -5,3 +5,7 @@
   flex-direction: column;
   margin: 1rem;
 }
+
+mark {
+  margin: 1rem;
+}

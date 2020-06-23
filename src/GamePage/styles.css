@@ -4,3 +4,47 @@
   align-items: center;
   flex-direction: column;
 }
+.main-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-image: url('../assets/background.jpg');
+  height: 100%; /* You must set a specified height */
+  min-height: 100vh;
+  color: white;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.meta-score {
+  font-size: 2vw;
+}
+.rounded {
+  width: 30%;
+  height: 20%;
+  margin: 2% 1% 2% 1%;
+}
+.desc {
+  margin: 2%;
+}
+
+@media screen and (max-width: 450px) {
+  .meta-score {
+    font-size: 8vw;
+    color: white;
+    margin: 5%;
+  }
+
+  .rounded {
+    width: 80%;
+    height: 70%;
+    margin: 3% 1% 2% 1%;
+  }
+
+  .desc {
+    margin: 5%;
+  }
+}

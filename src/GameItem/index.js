@@ -11,7 +11,7 @@ const GameItem = props => {
         alt='hell'
         style={{ width: '20rem', height: '15rem' }}
       />
-      {props.name}
+      <mark>{props.name}</mark>
     </div>
   );
 };

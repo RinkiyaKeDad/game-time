@@ -13,7 +13,7 @@ const LandingPage = props => {
     const fetchGames = async () => {
       try {
         const response = await axios.get(
-          `https://api.rawg.io/api/games?page_size=7&search=${query}`
+          `https://api.rawg.io/api/games?page_size=8&search=${query}`
         );
         console.log(response.data.results);
         setLoadedGames(response.data.results);
@@ -28,7 +28,7 @@ const LandingPage = props => {
     <div className='main-wrap-search'>
       {loadedGames &&
         loadedGames.map(game => (
-          <Link to={`/${game.slug}`}>
+          <Link to={`/${game.slug}`} style={{ textDecoration: 'none' }}>
             <GameItem
               key={game.slug}
               slug={game.slug}
