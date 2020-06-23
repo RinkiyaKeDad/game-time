@@ -14,4 +14,4 @@ The app was buillt using create-react-app. Clone the repo, make your changes and
 
 ### Special Thanks
 
-A huge thanks to rawg.io for provind this free and amazing api with such a large collection of games. Do check them out.
+A huge thanks to rawg.io for provind this free and amazing api with such a large collection of games. Do check them out. Thanks to Jeremy Bishop for providing the background image. Check him out at: https://www.vsual.co/shop/jeremy-bishop
