@@ -2,7 +2,7 @@
 
 Search for your favorite games and get to know their metacritic score and a breif description about them.
 
-### Deployed at: mygametime.netlify.app
+### Deployed at: https://mygametime.netlify.app/
 
 ### Build using:
 
