@@ -10,13 +10,9 @@
   align-items: center;
   flex-wrap: wrap;
 
-  background-image: url('../assets/background.jpg');
   height: 100%; /* You must set a specified height */
   min-height: 100vh;
   color: white;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .meta-score {
