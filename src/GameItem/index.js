@@ -7,7 +7,7 @@ const GameItem = props => {
     <div className='main-game-item'>
       <img
         src={props.image}
-        className='img-thumbnail'
+        className='img-fluid'
         alt='hell'
         style={{ width: '20rem', height: '15rem' }}
       />
