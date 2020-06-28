@@ -12,9 +12,7 @@ const LandingPage = () => {
 
   return (
     <div className='background-stuff'>
-      <mark>
-        <h1>GameTime</h1>
-      </mark>
+      <h1 class='head-title'>GameTime</h1>
       <form className='form-inline form-stuff'>
         <input
           type='text'
